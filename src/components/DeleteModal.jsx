@@ -10,7 +10,7 @@ const ModalDelete = ({ userID }) => {
     const toggle = () => setModal(!modal);
 
     const mutation = useMutation(async (recordID) => {
-        const rawResponse = await fetch(`http://localhost:3004/users/${recordID}`, {
+        const rawResponse = await fetch(`https://json-server-usersdata.vercel.app/users/${recordID}`, {
             method: 'DELETE'
         });
 

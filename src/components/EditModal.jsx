@@ -12,7 +12,7 @@ const ModalEdit = ({ userID }) => {
     const toggle = () => setModal(!modal);
 
     const mutation = useMutation(async (editUser) => {
-        const rawResponse = await fetch(`http://localhost:3004/users/${userID}`, {
+        const rawResponse = await fetch(`https://json-server-usersdata.vercel.app/users/${userID}`, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
