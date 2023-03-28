@@ -10,7 +10,7 @@ const ModalDelete = ({ userID }) => {
     const toggle = () => setModal(!modal);
 
     const mutation = useMutation(async (recordID) => {
-        const rawResponse = await fetch(`https://json-server-usersdata.vercel.app/users/${recordID}`, {
+        const rawResponse = await fetch(`https://my-json-server.typicode.com/waseem1903/json-server/users/${recordID}`, {
             method: 'DELETE'
         });
 
