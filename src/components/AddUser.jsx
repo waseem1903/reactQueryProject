@@ -7,7 +7,7 @@ const AddUser = () => {
     const navigate = useNavigate();
 
     const mutation = useMutation(async (newUser) => {
-        const rawResponse = await fetch('https://json-server-usersdata.vercel.app/users', {
+        const rawResponse = await fetch('https://my-json-server.typicode.com/waseem1903/json-server/users', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
