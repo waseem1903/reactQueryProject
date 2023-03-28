@@ -12,7 +12,7 @@ const ModalEdit = ({ userID }) => {
     const toggle = () => setModal(!modal);
 
     const mutation = useMutation(async (editUser) => {
-        const rawResponse = await fetch(`https://json-server-usersdata.vercel.app/users/${userID}`, {
+        const rawResponse = await fetch(`https://my-json-server.typicode.com/waseem1903/json-server/users/${userID}`, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
