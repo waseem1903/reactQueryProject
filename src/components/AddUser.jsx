@@ -7,10 +7,10 @@ const AddUser = () => {
     const navigate = useNavigate();
 
     const mutation = useMutation(async (newUser) => {
-        const rawResponse = await fetch('https://json-server-usersdata.vercel.app/users', {
+        const rawResponse = await fetch('http://localhost:3004/users', {
             method: 'POST',
             headers: {
-                'Accept': 'application/json',
+                // 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(newUser)

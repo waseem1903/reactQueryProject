@@ -5,7 +5,7 @@ import { useQuery } from 'react-query'
 import { Link, useNavigate } from 'react-router-dom'
 
 const getUser = async () => {
-    const response = await fetch('https://json-server-usersdata.vercel.app/users')
+    const response = await fetch('http://localhost:3004/users')
     if (!response.ok) {
         throw new Error('Network response was not ok')
     }
